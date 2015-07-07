@@ -23,8 +23,11 @@ public class EnemyEngine : MonoBehaviour
 	// Instead of just destroying the game object, I'm going to first replace
 	// it with a prefab "explosion" object, which will take care of the explosion
 	// animation and sounds. Then, this object has my permission to die. 
-	void DestroyMe()
+	public void DestroyMe()
 	{
+		// Update's the player's score
+		GameManager.instance.playerShip.GetComponent<ShipData>().updateScore(100);
+
 		// Creates an "explosion" by using the explosion prefab
 		// and then destroying the explosion object shortly after
 		GameObject explosion = (GameObject)Instantiate(GameManager.instance.explosion1, 

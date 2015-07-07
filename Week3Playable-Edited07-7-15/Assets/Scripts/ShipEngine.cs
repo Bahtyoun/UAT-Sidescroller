@@ -44,15 +44,25 @@ public class ShipEngine : MonoBehaviour
 		tf.position = newPosition;
 	}
 	
-	// Damages the player's ship by amount parameter
-	public void Damage(int amount)
+	// Alter's the player's HP by amount and then updates
+	// the GUI health bar
+	public void changeHP(int amount)
 	{
 		// Adjust HP by amount and check to see if we're less than 0,
 		// meaning the ship is destroyed and the player must respawn.
-		if((data.HP -= amount) <= 0)
+		data.HP += amount;
+		if(data.HP <= 0)
 		{
-			Respawn();
+			data.numLives--;
+			if(data.numLives == 0)
+				GameOver();
+			else Respawn();
 		}
+		// Don't add more than the max!
+		else if(data.HP > data.maxHP)
+			data.HP = data.maxHP;
+		// ShipData handles the updating of the GUI
+		data.updateHP();
 	}
 
 	// Handles obstacle and enemy collisions
@@ -71,19 +81,43 @@ public class ShipEngine : MonoBehaviour
 				Vector2 bounceUp = new Vector2(tf.position.x,
 				                               tf.position.y + GameManager.instance.bounceAmount);
 				tf.position = bounceUp;
-
+				invincibleMode();
+				changeHP(-3);
+				// No need to check for other collisions
+				return;
 			}
 			// Same thing with the ceiling, except bounce down
-			if(col.gameObject.tag == "CeilingCol")
+			else if(col.gameObject.tag == "CeilCol")
 			{
 				Vector2 bounceDown = new Vector2(tf.position.x,
 				                               tf.position.y - GameManager.instance.bounceAmount);
 				tf.position = bounceDown;
 				invincibleMode();
+				changeHP(-3);
+				return;
 			}
 		}
 	}
 
+	// Enemies and Bubbles are Triggers, not solid objects!
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		// Hitting a bubble adds 3 to the player's HP
+		// HP is actually "Air", but we'll call it HP
+		// to avoid confusion in the code
+		if(col.gameObject.tag == "Bubble")
+		{
+			changeHP(3);
+			return;
+		}
+		// When colliding with an enemy, damage the player
+		// by 1/3 of its health and then destroy the enemy
+		else if(col.gameObject.tag == "Enemy")
+		{
+			changeHP(-(int)(data.maxHP / 3));
+			col.gameObject.GetComponent<EnemyEngine>().DestroyMe();
+		}
+	}
 
 	void invincibleMode()
 	{
@@ -109,17 +143,46 @@ public class ShipEngine : MonoBehaviour
 			}
 		}	
 	}
+
 	// To be implemented later
 	public void Respawn()
 	{
-		return; 
+		// Creates an "explosion" by using the explosion prefab
+		// and then destroying the explosion object shortly after
+		GameObject explosion = (GameObject)Instantiate(GameManager.instance.explosion1, 
+		                                               GetComponent<Transform>().position,
+		                                               Quaternion.identity);
+		// I slowed this down a bit because it was playing too fast
+		// and didn't give the sound enough time to play!
+		explosion.GetComponent<Animator>().speed = 0.75f;
+		Destroy(explosion, 1.0f);
+		// Now, wait for two seconds and then
+		// adjust the ship's data to reflect a respawn
+		// and then move the ship back to the respawn location
+		StartCoroutine(Wait(2.0f));
+		data.updateScore(-500);
+		data.HP = data.maxHP;
+		data.updateHP();
+		Camera.main.transform.position = new Vector3(0,0,-10);
+		tf.position = GameManager.instance.respawnLocation;
+		if(data.numLives == 2)
+			GameManager.instance.GUI.Life3.enabled = false;
+		else if(data.numLives == 1)
+			GameManager.instance.GUI.Life2.enabled = false;
 	}
 	
 	// Also to be implemented later
 	public void GameOver()
 	{
-		return;
-	}	                                 
+		// Just reset the game for now
+		Application.LoadLevel(0);
+	}
+
+	// Waits for the given time before proceeding to the next line
+	IEnumerator Wait(float duration)
+	{
+		yield return new WaitForSeconds(duration);
+	}
 	
 	
 }

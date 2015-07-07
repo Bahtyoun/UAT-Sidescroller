@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{17D5A492-EBAE-8D22-AAB8-DC65BFEA0915}</ProjectGuid>
+	<ProjectGuid>{BAB84476-8457-F037-10C9-FCCE25AADFA9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,8 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BubbleShipData.cs" />
-     <Compile Include="Assets\Scripts\BubbleShipEngine.cs" />
      <Compile Include="Assets\Scripts\BulletController.cs" />
      <Compile Include="Assets\Scripts\CameraPath.cs" />
      <Compile Include="Assets\Scripts\EnemyData.cs" />
@@ -55,6 +53,8 @@
      <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Hotspots.cs" />
+     <Compile Include="Assets\Scripts\JellyShipData.cs" />
+     <Compile Include="Assets\Scripts\JellyShipEngine.cs" />
      <Compile Include="Assets\Scripts\PlayerInputController.cs" />
      <Compile Include="Assets\Scripts\ShipData.cs" />
      <Compile Include="Assets\Scripts\ShipEngine.cs" />

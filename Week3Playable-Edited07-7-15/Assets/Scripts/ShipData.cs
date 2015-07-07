@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 // Contains all data pertaining to the player's ship
 public class ShipData : MonoBehaviour 
@@ -27,7 +28,7 @@ public class ShipData : MonoBehaviour
 
 	// The ship's current and max HP, respectively
 	[HideInInspector]	
-	public float HP, maxHP;	
+	public int HP, maxHP;	
 
 	// The player's current score
 	[HideInInspector]
@@ -41,6 +42,13 @@ public class ShipData : MonoBehaviour
 	// When this is 0, it's game over man. 
 	[HideInInspector]
 	public int numLives;
+
+	// The GUI Text object that displays
+	// the player's score, and the
+	// slider that displays the 
+	// player's HP
+	public Text GUIscore;
+	public Slider HPslider;
 	
 	
 	// The All-Powerful GameManger will be used to initialize all of these values
@@ -56,6 +64,17 @@ public class ShipData : MonoBehaviour
 		numLives = GameManager.instance.numberOfLives;
 		maxHP = GameManager.instance.playerMaxHP;
 		HP = maxHP;
-	}		
+	}
+
+	public void updateScore(int amount)
+	{
+		score += amount;
+		GUIscore.text = "Score: " + score;
+	}
+
+	public void updateHP()
+	{
+		HPslider.value = HP;
+	}
 	
 }

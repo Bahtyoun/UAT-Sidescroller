@@ -14,9 +14,12 @@ public class GameManager : MonoBehaviour
 
 	// The On-Screen GUI for the primary gameplay mode
 	public GUIManager GUI;
-	
-	// The borders of the level
-	public float xMin,xMax,yMin,yMax;
+
+	// The player's ship
+	public GameObject playerShip;
+	// The respawn location of the player's ship
+	// for when the player is destroyed
+	public Vector3 respawnLocation;
 
 	// Data pertaining to the player's ship. 
 	public int playerMaxHP;
@@ -34,8 +37,8 @@ public class GameManager : MonoBehaviour
 	public float bounceAmount;
 
 	// The first enemy, the BubbleShip
-	public int bubbleShipHP;
-	public int bubbleShipMoveSpeed;
+	public int jellyShipHP;
+	public int jellyShipMoveSpeed;
 
 	// The prefab containing the first explosion animation
 	public GameObject explosion1;
