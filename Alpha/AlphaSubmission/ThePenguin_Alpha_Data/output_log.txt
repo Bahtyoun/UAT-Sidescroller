@@ -1,37 +1,25 @@
 Initialize engine version: 5.1.1f1 (2046fc06d4d8)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.0]
-    Renderer: NVIDIA GeForce GTX 260M (ID=0x618)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 670MX   (ID=0x11a1)
     Vendor:   NVIDIA
-    VRAM:     1005 MB
+    VRAM:     2987 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.099 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.069 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Shaun\Desktop\ThePenguin_Alpha_Data\Managed\System.dll (this message is harmless)
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.006350 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 571.
-Total: 0.386574 ms (FindLiveObjects: 0.065239 ms CreateObjectMapping: 0.023097 ms MarkObjects: 0.280408 ms  DeleteObjects: 0.010130 ms)
-
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.717633 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 571.
-Total: 0.369149 ms (FindLiveObjects: 0.065644 ms CreateObjectMapping: 0.022286 ms MarkObjects: 0.264604 ms  DeleteObjects: 0.010130 ms)
-
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\Alpha\AlphaSubmission\ThePenguin_Alpha_Data\Managed\System.dll (this message is harmless)
