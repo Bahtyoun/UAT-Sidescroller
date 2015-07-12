@@ -46,23 +46,25 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BulletController.cs" />
-     <Compile Include="Assets\Scripts\CameraBounds.cs" />
-     <Compile Include="Assets\Scripts\CameraPath.cs" />
-     <Compile Include="Assets\Scripts\CycloneController.cs" />
-     <Compile Include="Assets\Scripts\EnemyData.cs" />
-     <Compile Include="Assets\Scripts\EnemyEngine.cs" />
-     <Compile Include="Assets\Scripts\GUIManager.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\HealthBubbleBehavior.cs" />
-     <Compile Include="Assets\Scripts\HealthJetBehavior.cs" />
-     <Compile Include="Assets\Scripts\Hotspots.cs" />
-     <Compile Include="Assets\Scripts\JellyShipData.cs" />
-     <Compile Include="Assets\Scripts\JellyShipEngine.cs" />
-     <Compile Include="Assets\Scripts\PlayerInputController.cs" />
-     <Compile Include="Assets\Scripts\ShipData.cs" />
-     <Compile Include="Assets\Scripts\ShipEngine.cs" />
-     <Compile Include="Assets\Scripts\ShipShooter.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\BossEngine.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\BossRockBehavior.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\CycloneController.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyData.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyEngine.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\JellyShipData.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\JellyShipEngine.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\BulletController.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerInputController.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\ShipData.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\ShipEngine.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\ShipShooter.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\CameraBounds.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\CameraPath.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\GUIManager.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\HealthBubbleBehavior.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\HealthJetBehavior.cs" />
+     <Compile Include="Assets\Scripts\World Scripts\Hotspots.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

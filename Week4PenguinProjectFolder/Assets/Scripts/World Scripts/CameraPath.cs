@@ -37,6 +37,11 @@ public class CameraPath : MonoBehaviour {
 			// Find direction for camera to move
 			getDirection ();
 		}
+		// Check if level reset, if it did reset current hotspot to start, and make sure camera speed is proper.
+		if ((this.transform.position == GameObject.Find ("Start").transform.position) && (currentHotspot != 0)) {
+			currentHotspot = 0;
+			cameraSpeed = GameManager.instance.cameraSpeed / 10.0f;
+		}
 
 		// Move Camera
 		this.transform.Translate (cameraDirection * cameraSpeed * Time.deltaTime);
@@ -56,7 +61,7 @@ public class CameraPath : MonoBehaviour {
 		}
 
 		// If we're at the last hotspot, we have a boss battle and camera should not move
-		if (!didChange)
+		if (!didChange && (cameraSpeed != 0.0f))
 			cameraSpeed = 0.0f;
 	}
 

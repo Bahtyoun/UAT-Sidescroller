@@ -40,6 +40,12 @@ public class GameManager : MonoBehaviour
 	public int jellyShipHP;
 	public int jellyShipMoveSpeed;
 
+	// Boss data (depressed Alien)
+	public int bossHP;
+	public float bossSpeed;
+	public float bossAttackCooldown;
+	public int bossAttackDamage;
+
 	// The prefab containing the first explosion animation
 	public GameObject explosion1;
 

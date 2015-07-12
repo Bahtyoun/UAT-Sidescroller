@@ -95,8 +95,8 @@ public class ShipEngine : MonoBehaviour
 	// Sends the player flying in a random direction
 	void hitCyclone()
 	{
-		int xMove = Random.Range(1,4);
-		int yMove = Random.Range(1,4);
+		int xMove = Random.Range(1,3);
+		int yMove = Random.Range(1,3);
 		Vector2 newPos = new Vector2(tf.position.x + xMove,
 		                             tf.position.y + yMove);
 		tf.position = newPos;
@@ -121,14 +121,16 @@ public class ShipEngine : MonoBehaviour
 		data.updateScore(-500);
 		data.HP = data.maxHP;
 		data.updateHP();
-		Camera.main.transform.position = new Vector3(0,0,-10);
+		// Move camera to start point (Using -10 position on z axis)
+		Camera.main.transform.position = GameObject.Find("Start").transform.position;
+
 		tf.position = GameManager.instance.respawnLocation;
 		if(data.numLives == 2)
 			GameManager.instance.GUI.Life3.enabled = false;
 		else if(data.numLives == 1)
 			GameManager.instance.GUI.Life2.enabled = false;
 	}
-	
+
 	// Also to be implemented later
 	public void GameOver()
 	{
@@ -173,11 +175,8 @@ public class ShipEngine : MonoBehaviour
 				changeHP(-3);
 				return;
 			}
-			// Certain spots on the floor and ceiling are insta-kill because
-			// the player will have to crash into them at a critical point
-			// on the ship, due to their location
-			else if(col.gameObject.tag == "DeathCol")
-				changeHP(-15);
+			// Fixes the rotation issue by reverting to 0,0,0 before the player would see anything
+			if(tf.rotation.z != 0.0f) tf.rotation = Quaternion.identity;
 		}
 	}
 	
@@ -188,25 +187,33 @@ public class ShipEngine : MonoBehaviour
 		// Hitting a bubble adds 3 to the player's HP
 		// HP is actually "Air", but we'll call it HP
 		// to avoid confusion in the code
-		if(col.gameObject.tag == "Bubble")
-		{
-			changeHP(3);
+		if (col.gameObject.tag == "Bubble") {
+			changeHP (3);
 			// Can only get health from the bubble once!
-			Destroy(col.gameObject);
+			Destroy (col.gameObject);
 			return;
 		}
 		// When colliding with an enemy, damage the player
 		// by 1/3 of its health and then destroy the enemy
-		else if(col.gameObject.tag == "Enemy")
-		{
-			changeHP(-(int)(data.maxHP / 3));
-			col.gameObject.GetComponent<EnemyEngine>().DestroyMe();
+		else if (col.gameObject.tag == "Enemy") {
+			changeHP (-(int)(data.maxHP / 3));
+			col.gameObject.GetComponent<EnemyEngine> ().DestroyMe ();
 		}
 		// Hitting a cyclone sends the player away in a random direction!
-		else if(col.gameObject.tag == "Cyclone")
-		{
-			changeHP(-4);
-			hitCyclone();
+		else if (col.gameObject.tag == "Cyclone") {
+			changeHP (-4);
+			hitCyclone ();
+		} 
+		// Colliding with boss's rock attack will deal damage equal to game manager setting for damage
+		else if (col.gameObject.tag == "BossRock") {
+			changeHP (-GameManager.instance.bossAttackDamage);
+			Destroy (col.gameObject);
+		}
+		// Colliding with the boss will damage the player greatly (half their max health)
+		// It will do some damage to the boss as well
+		else if (col.gameObject.tag == "Boss") {
+			changeHP (-(int)(data.maxHP / 2));
+			col.gameObject.GetComponent<BossEngine>().takeDamage(5);
 		}
 	}
 	

@@ -41,13 +41,11 @@ public class BulletController : MonoBehaviour
 			col.gameObject.GetComponent<EnemyEngine>().Damage(GameManager.instance.playerBulletDamage);
 			Destroy (gameObject);
 		}
-	}
 
-	void OnCollisionEnter2D(Collision2D col)
-	{
 		if(col.gameObject.tag == "CeilCol"
 		   || col.gameObject.tag == "FloorCol"
 		   || col.gameObject.tag == "DeathCol")
 			Destroy(gameObject);
 	}
+
 }
