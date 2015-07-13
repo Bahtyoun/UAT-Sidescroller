@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 
 	// The prefab containing the first explosion animation
 	public GameObject explosion1;
+	public GameObject playerExplosion;
 
 
 	// An array containing all of the enemies currently on the screen

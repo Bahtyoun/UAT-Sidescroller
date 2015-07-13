@@ -8,7 +8,8 @@ public class ShipEngine : MonoBehaviour
 	public Transform tf;
 	// ShipDate component
 	public ShipData data;
-	public bool isInvincible;
+	public bool isInvincible, waitingToSpawn;
+	public float spawnTime, currentSpawnTimer;
 	float invincibleCooldown;
 	
 	
@@ -18,6 +19,9 @@ public class ShipEngine : MonoBehaviour
 		data = GetComponent<ShipData>();
 		isInvincible = false;
 		invincibleCooldown = 0.0f;
+		spawnTime = 3.0f;
+		currentSpawnTimer = 0.0f;
+		waitingToSpawn = false;
 	}
 
 	void Update()
@@ -26,6 +30,18 @@ public class ShipEngine : MonoBehaviour
 		// the cooldown and changing of sprite color
 		if(isInvincible)
 			invincibleMode();
+		if(waitingToSpawn)
+		{
+			Debug.Log("Waiting to spawn. Timer is " + currentSpawnTimer);
+			currentSpawnTimer += Time.deltaTime;
+			if(currentSpawnTimer >= spawnTime)
+			{
+				Debug.Log("AAAAAASpawn timer is" + currentSpawnTimer);
+				waitingToSpawn = false;
+				currentSpawnTimer = 0.0f;
+				Respawn();
+			}
+		}
 		// Should fix the rotation glitch
 		tf.rotation = Quaternion.identity;
 	}
@@ -58,7 +74,7 @@ public class ShipEngine : MonoBehaviour
 			data.numLives--;
 			if(data.numLives == 0)
 				GameOver();
-			else Respawn();
+			else waitingToSpawn = true;
 		}
 		// Don't add more than the max!
 		else if(data.HP > data.maxHP)
@@ -108,16 +124,9 @@ public class ShipEngine : MonoBehaviour
 		// Creates an "explosion" by using the explosion prefab
 		// and then destroying the explosion object shortly after
 		GameObject explosion = (GameObject)Instantiate(GameManager.instance.explosion1, 
-		                                               GetComponent<Transform>().position,
+		                                               tf.position,
 		                                               Quaternion.identity);
-		// I slowed this down a bit because it was playing too fast
-		// and didn't give the sound enough time to play!
-		explosion.GetComponent<Animator>().speed = 0.75f;
-		Destroy(explosion, 1.0f);
-		// Now, wait for two seconds and then
-		// adjust the ship's data to reflect a respawn
-		// and then move the ship back to the respawn location
-		StartCoroutine(Wait(2.0f));
+		Destroy(explosion, 3.0f);
 		data.updateScore(-500);
 		data.HP = data.maxHP;
 		data.updateHP();
