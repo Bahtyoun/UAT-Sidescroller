@@ -1,0 +1,638 @@
+fileFormatVersion: 2
+guid: e4a09ce3b48248d47876bcc57a456524
+timeCreated: 1436714306
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TornadoSpriteSheet_0
+    21300002: TornadoSpriteSheet_1
+    21300004: TornadoSpriteSheet_2
+    21300006: TornadoSpriteSheet_3
+    21300008: TornadoSpriteSheet_4
+    21300010: TornadoSpriteSheet_5
+    21300012: TornadoSpriteSheet_6
+    21300014: TornadoSpriteSheet_7
+    21300016: TornadoSpriteSheet_8
+    21300018: TornadoSpriteSheet_9
+    21300020: TornadoSpriteSheet_10
+    21300022: TornadoSpriteSheet_11
+    21300024: TornadoSpriteSheet_12
+    21300026: TornadoSpriteSheet_13
+    21300028: TornadoSpriteSheet_14
+    21300030: TornadoSpriteSheet_15
+    21300032: TornadoSpriteSheet_16
+    21300034: TornadoSpriteSheet_17
+    21300036: TornadoSpriteSheet_18
+    21300038: TornadoSpriteSheet_19
+    21300040: TornadoSpriteSheet_20
+    21300042: TornadoSpriteSheet_21
+    21300044: TornadoSpriteSheet_22
+    21300046: TornadoSpriteSheet_23
+    21300048: TornadoSpriteSheet_24
+    21300050: TornadoSpriteSheet_25
+    21300052: TornadoSpriteSheet_26
+    21300054: TornadoSpriteSheet_27
+    21300056: TornadoSpriteSheet_28
+    21300058: TornadoSpriteSheet_29
+    21300060: TornadoSpriteSheet_30
+    21300062: TornadoSpriteSheet_31
+    21300064: TornadoSpriteSheet_32
+    21300066: TornadoSpriteSheet_33
+    21300068: TornadoSpriteSheet_34
+    21300070: TornadoSpriteSheet_35
+    21300072: TornadoSpriteSheet_36
+    21300074: TornadoSpriteSheet_37
+    21300076: TornadoSpriteSheet_38
+    21300078: TornadoSpriteSheet_39
+    21300080: TornadoSpriteSheet_40
+    21300082: TornadoSpriteSheet_41
+    21300084: TornadoSpriteSheet_42
+    21300086: TornadoSpriteSheet_43
+    21300088: TornadoSpriteSheet_44
+    21300090: TornadoSpriteSheet_45
+    21300092: TornadoSpriteSheet_46
+    21300094: TornadoSpriteSheet_47
+    21300096: TornadoSpriteSheet_48
+    21300098: TornadoSpriteSheet_49
+    21300100: TornadoSpriteSheet_50
+    21300102: TornadoSpriteSheet_51
+    21300104: TornadoSpriteSheet_52
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TornadoSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 399
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 327
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 255
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 183
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 111
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TornadoSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
