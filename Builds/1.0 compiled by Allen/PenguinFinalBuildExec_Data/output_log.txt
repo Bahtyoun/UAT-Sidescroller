@@ -1,0 +1,97 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 670MX   (ID=0x11a1)
+    Vendor:   NVIDIA
+    VRAM:     2987 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Brian\Documents\1 UAT\24\UAT-Sidescroller\PenguinFinalBuildExec_Data\Managed\System.dll (this message is harmless)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.364150 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1294.
+Total: 0.302191 ms (FindLiveObjects: 0.067660 ms CreateObjectMapping: 0.020146 ms MarkObjects: 0.202601 ms  DeleteObjects: 0.010263 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.925153 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.367571 ms (FindLiveObjects: 0.015964 ms CreateObjectMapping: 0.013304 ms MarkObjects: 0.139502 ms  DeleteObjects: 0.198040 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.269121 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1298.
+Total: 0.318916 ms (FindLiveObjects: 0.053216 ms CreateObjectMapping: 0.020146 ms MarkObjects: 0.233770 ms  DeleteObjects: 0.011403 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.570256 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.344764 ms (FindLiveObjects: 0.012923 ms CreateObjectMapping: 0.011783 ms MarkObjects: 0.128098 ms  DeleteObjects: 0.191197 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.263799 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1298.
+Total: 0.337542 ms (FindLiveObjects: 0.063099 ms CreateObjectMapping: 0.021666 ms MarkObjects: 0.241373 ms  DeleteObjects: 0.011023 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.608267 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.404822 ms (FindLiveObjects: 0.026608 ms CreateObjectMapping: 0.034970 ms MarkObjects: 0.147484 ms  DeleteObjects: 0.194999 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.239852 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1298.
+Total: 0.341343 ms (FindLiveObjects: 0.063859 ms CreateObjectMapping: 0.021286 ms MarkObjects: 0.244794 ms  DeleteObjects: 0.011023 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.742068 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.440933 ms (FindLiveObjects: 0.028508 ms CreateObjectMapping: 0.047894 ms MarkObjects: 0.158888 ms  DeleteObjects: 0.204502 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.301811 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1298.
+Total: 0.351986 ms (FindLiveObjects: 0.058537 ms CreateObjectMapping: 0.021286 ms MarkObjects: 0.259238 ms  DeleteObjects: 0.012163 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.740927 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.397980 ms (FindLiveObjects: 0.024707 ms CreateObjectMapping: 0.033830 ms MarkObjects: 0.147104 ms  DeleteObjects: 0.191578 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.272162 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1298.
+Total: 0.369472 ms (FindLiveObjects: 0.118215 ms CreateObjectMapping: 0.019765 ms MarkObjects: 0.220086 ms  DeleteObjects: 0.010263 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.696074 ms
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 0.417366 ms (FindLiveObjects: 0.025087 ms CreateObjectMapping: 0.033450 ms MarkObjects: 0.161168 ms  DeleteObjects: 0.194999 ms)
+
