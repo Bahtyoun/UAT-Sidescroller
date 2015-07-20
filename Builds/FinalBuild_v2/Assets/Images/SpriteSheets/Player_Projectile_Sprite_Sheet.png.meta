@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: 3351647d70909f042b34373bea55f12e
-timeCreated: 1437363727
+timeCreated: 1437368913
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Player_Projectile_Sprite_Sheet_0
+    21300002: Player_Projectile_Sprite_Sheet_1
+    21300004: Player_Projectile_Sprite_Sheet_2
+    21300006: Player_Projectile_Sprite_Sheet_3
+    21300008: Player_Projectile_Sprite_Sheet_4
+    21300010: Player_Projectile_Sprite_Sheet_5
+    21300012: Player_Projectile_Sprite_Sheet_6
+    21300014: Player_Projectile_Sprite_Sheet_7
+    21300016: Player_Projectile_Sprite_Sheet_8
+    21300018: Player_Projectile_Sprite_Sheet_9
+    21300020: Player_Projectile_Sprite_Sheet_10
+    21300022: Player_Projectile_Sprite_Sheet_11
+    21300024: Player_Projectile_Sprite_Sheet_12
+    21300026: Player_Projectile_Sprite_Sheet_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +44,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +62,147 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Player_Projectile_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 214
+        width: 205
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 211
+        width: 205
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 54, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 212
+        width: 205
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 52, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 205
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 52, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 208
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 206
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 202
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 157
+        width: 210
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 3, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 106
+        width: 208
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 208
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 207
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 159
+        width: 204
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 105
+        width: 208
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player_Projectile_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 52
+        width: 210
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

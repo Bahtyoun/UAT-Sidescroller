@@ -207,7 +207,8 @@ public class ShipEngine : MonoBehaviour
 		// by 1/3 of its health and then destroy the enemy
 		else if (col.gameObject.tag == "Enemy") {
 			changeHP (-(int)(data.maxHP / 3));
-			col.gameObject.GetComponent<EnemyEngine> ().DestroyMe ();
+			// Destroy jellyships, but not pinchers, on collision
+			if(col.gameObject.name == "JellyShip") col.gameObject.GetComponent<EnemyEngine> ().DestroyMe ();
 		}
 		// Hitting a cyclone sends the player away in a random direction!
 		else if (col.gameObject.tag == "Cyclone") {
