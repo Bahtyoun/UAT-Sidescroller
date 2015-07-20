@@ -39,6 +39,7 @@ public class EnemyEngine : MonoBehaviour
 			explosion = (GameObject)Instantiate (GameManager.instance.explosion2, 
 			                                                GetComponent<Transform> ().position,
 			                                                Quaternion.identity);
+
 		}
 		// I slowed this down a bit because it was playing too fast
 		// and didn't give the sound enough time to play!

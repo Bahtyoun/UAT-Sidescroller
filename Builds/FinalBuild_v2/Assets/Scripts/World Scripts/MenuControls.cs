@@ -10,6 +10,7 @@ public class MenuControls : MonoBehaviour {
 	void Start () {
 		currentTexture = NewGame;
 		waitTime = 0.0f;
+		Screen.SetResolution (1024, 768, false);
 	}
 	
 	// Update is called once per frame

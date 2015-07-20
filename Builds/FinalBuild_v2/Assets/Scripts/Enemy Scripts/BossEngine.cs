@@ -44,6 +44,9 @@ public class BossEngine : MonoBehaviour {
 			
 			// Destroy the boss
 			Destroy(gameObject);
+
+			// Go to main menu, since we don't have High score list.
+			Application.LoadLevel(0);
 		}
 	}
 }
