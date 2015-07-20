@@ -27,12 +27,19 @@ public class EnemyEngine : MonoBehaviour
 	{
 		// Update's the player's score
 		GameManager.instance.playerShip.GetComponent<ShipData>().updateScore(100);
-
+		GameObject explosion;
 		// Creates an "explosion" by using the explosion prefab
 		// and then destroying the explosion object shortly after
-		GameObject explosion = (GameObject)Instantiate(GameManager.instance.explosion1, 
-		                                   GetComponent<Transform>().position,
+		if (this.name == "JellyShip") {
+			explosion = (GameObject)Instantiate (GameManager.instance.explosion1, 
+		                                   GetComponent<Transform> ().position,
 		                                               Quaternion.identity);
+		}
+		else /*if (this.name == "Pincher")*/ {
+			explosion = (GameObject)Instantiate (GameManager.instance.explosion2, 
+			                                                GetComponent<Transform> ().position,
+			                                                Quaternion.identity);
+		}
 		// I slowed this down a bit because it was playing too fast
 		// and didn't give the sound enough time to play!
 		explosion.GetComponent<Animator>().speed = 0.75f;

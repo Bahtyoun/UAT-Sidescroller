@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 	public int bossAttackDamage;
 
 	// The prefab containing the first explosion animation
-	public GameObject explosion1;
+	public GameObject explosion1, explosion2;
 	public GameObject playerExplosion;
 
 

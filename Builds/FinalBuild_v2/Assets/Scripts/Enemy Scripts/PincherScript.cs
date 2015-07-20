@@ -3,11 +3,13 @@ using System.Collections;
 
 public class PincherScript : MonoBehaviour 
 {
-	public Vector3 pointB;
+	private Vector3 pointB;
 		
 		IEnumerator Start()
 		{
 			var pointA = transform.position;
+		    pointB.x = pointA.x;
+		    pointB.y = pointA.y + 0.75f;
 			while(true)
 			{
 				yield return StartCoroutine(MoveObject(transform, pointA, pointB, 2.0f));

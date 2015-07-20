@@ -113,8 +113,8 @@ public class ShipEngine : MonoBehaviour
 	// Sends the player flying in a random direction
 	void hitCyclone()
 	{
-		int xMove = Random.Range(1,3);
-		int yMove = Random.Range(1,3);
+		int xMove = Random.Range(1,2);
+		int yMove = Random.Range(1,2);
 		Vector2 newPos = new Vector2(tf.position.x + xMove,
 		                             tf.position.y + yMove);
 		tf.position = newPos;
@@ -129,6 +129,7 @@ public class ShipEngine : MonoBehaviour
 		// Move camera to start point (Using -10 position on z axis)
 		Camera.main.transform.position = GameObject.Find("Start").transform.position;
 		tf.position = GameManager.instance.respawnLocation;
+
 		GetComponent<PlayerInputController>().enabled = true;
 		GetComponent<Animator>().enabled = true;
 		GetComponent<SpriteRenderer>().enabled = true;

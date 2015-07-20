@@ -42,6 +42,7 @@ public class CameraPath : MonoBehaviour {
 		if ((this.transform.position == start.transform.position) && (currentHotspot != 0)) {
 			currentHotspot = 0;
 			cameraSpeed = GameManager.instance.cameraSpeed / 10.0f;
+			getDirection (); // Should fix issue where camera moved backwards on death at boss
 		}
 
 		// Move Camera

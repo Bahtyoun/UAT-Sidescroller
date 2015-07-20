@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class NewAI : MonoBehaviour {
-	public Transform target;
-	public int moveSpeed;
+	public GameObject target;
+	private float moveSpeed;
 	public int rotationSpeed;
 	public int maxdistance;
 	
@@ -15,21 +15,24 @@ public class NewAI : MonoBehaviour {
 	
 	
 	void Start () {
-		GameObject go = GameObject.FindGameObjectWithTag("PlayerShipPrefab");
+		moveSpeed = GetComponent<JellyShipData> ().moveSpeed;
+		//GameObject go = GameObject.FindGameObjectWithTag("PlayerShipPrefab");
 		
-		target = go.transform;
+		//target = go.transform;
 		
-		maxdistance = 2;
+		//maxdistance = 2;
 	}
 	
 	
 	void Update () {
-		Debug.DrawLine(target.position, myTransform.position, Color.red); 
+		Debug.DrawLine(target.transform.position, myTransform.position, Color.red); 
 		
 		
-		myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+		myTransform.rotation = Quaternion.Slerp(myTransform.rotation, 
+		                                        Quaternion.LookRotation(target.transform.position - myTransform.position), 
+		                                        rotationSpeed * Time.deltaTime);
 		
-		if(Vector3.Distance(target.position, myTransform.position) > maxdistance){
+		if(Vector3.Distance(target.transform.position, myTransform.position) < maxdistance){
 			//Move towards target
 			myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
 			transform.rotation = Quaternion.Euler(myTransform.rotation.eulerAngles.x, 0, 0);
